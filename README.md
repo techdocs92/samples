@@ -1,1 +1,1 @@
-TS info, tech writer
+Tom Sgrizzi, Technical Writer
