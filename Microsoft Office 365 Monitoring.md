@@ -1,14 +1,14 @@
-**Microsoft Office 365 Monitoring**
+# Microsoft Office 365 Monitoring
 
 LogicMonitor offers monitoring for Microsoft Office 365 by default. You can monitor the state of your Office 365 deployment, as well as the underlying services and license usage.
 
-**Requirements**
+## Requirements
 
 *   You must be an administrator of an active Microsoft Azure account to grant admin consent for API permissions.
 *   Add an app registration and subscription details in Azure. For more information, see [Adding Your Azure Environment to LogicMonitor](https://www.logicmonitor.com/support/lm-cloud/getting-started-lm-cloud/2b-adding-azure-environment-logicmonitor).
 *   Install the [Office 365 LogicModules](https://www.logicmonitor.com/support/monitoring/applications-databases/microsoft-office-365-monitoring#h-office-365-logicmodules).
 
-**Adding API Permissions to your App Registration**
+## Adding API Permissions to your App Registration
 
 1.  In Azure, navigate to **App registrations** and select the app registration that is set up for LogicMonitor. If it has not been set up, follow the steps in [Adding Your Azure Environment to LogicMonitor](https://www.logicmonitor.com/support/lm-cloud/getting-started-lm-cloud/2b-adding-azure-environment-logicmonitor).
 2.  From the app registration’s Overview page, select **API permissions** and then select **Add a permission**.
@@ -25,7 +25,7 @@ LogicMonitor offers monitoring for Microsoft Office 365 by default. You can moni
 
 **Note:** You must be an administrator to grant admin consent. For more information, see [Introduction to Permissions and Consent](https://learn.microsoft.com/en-us/azure/active-directory/develop/permissions-consent-overview).
 
-**Adding Office 365 to LogicMonitor**
+## Adding Office 365 to LogicMonitor
 
 Microsoft Office 365 is added to LogicMonitor as a SaaS resource. The SaaS Monitoring wizard takes you through the all of the steps, and you can test authentication before adding Office 365 to your resources. Use your Microsoft Azure account to configure the application permissions and integration settings. 
 
@@ -42,7 +42,7 @@ Microsoft Office 365 is added to LogicMonitor as a SaaS resource. The SaaS Moni
 8.  Select **Add Service** to add the new resource to LogicMonitor.
 9.  Select **View Resource** to view the Office 365 SaaS resource in LogicMonitor.
 
-**Office 365 LogicModules**
+### Office 365 LogicModules
 
 The following modules are available for Office 365 SaaS integration. For more information, see [Installing Modules and Packages](https://www.logicmonitor.com/support/modules-installing).
 
@@ -77,11 +77,11 @@ The following modules are available for Office 365 SaaS integration. For more in
 | Office365_ExchangeOnline_Mailboxes | ConfigSource | Monitors the Exchange mailbox configs. |
 | Office365_ExchangeOnline_Groups | ConfigSource | Monitors the config group objects. Returns security groups, mail-enabled security groups, distribution groups, and role groups. |
 
-**Microsoft Teams QoS DataSource**
+### Microsoft Teams QoS DataSource
 
 LogicMonitor’s MS Teams QoS (Quality of Service) DataSource monitors audio, video, and screen share metrics from MS Teams call records, which are made available by Microsoft. These metrics help identify MS Teams calls that are not performant, and which aspects of the calls are problematic. To use the MS Teams QoS DataSource, you must enable the Microsoft Graph permission CallRecords.Read.All in Microsoft Azure.
 
-**QoS Metrics and Reporting**
+## QoS Metrics and Reporting
 
 QoS metrics are reported only for calls that have ended.
 
@@ -89,11 +89,11 @@ QoS metrics are reported only for calls that have ended.
 *   Microsoft reports data for calls through the MS Teams app only — not from the browser.
 *   By default, LogicMonitor reports QoS metrics every five minutes. The Poll Now feature in LogicMonitor (Datapoint > Raw Data) shows metrics for the last scheduled call.
 
-**Microsoft callRecord API**
+### Microsoft callRecord API
 
 LogicMonitor uses Microsoft’s callRecord API to gather all QoS related data for recently-ended calls. The data is collected and processed, and performance metrics are reported to LogicMonitor. For example, you could collect data on the maximum audio jitter across all available segments of a call. For more information, see [Get callRecord](https://learn.microsoft.com/en-us/graph/api/callrecords-callrecord-get?view=graph-rest-1.0&tabs=http) from the Microsoft documentation.
 
-**Audio, Video, and Sharing Metrics**
+### Audio, Video, and Sharing Metrics
 
 The following metric types are monitored:
 
@@ -101,7 +101,7 @@ The following metric types are monitored:
 *   Video stream
 *   App sharing or video-based screen sharing stream
 
-**Audio Stream Metrics**
+### Audio Stream Metrics
 
 | Name | Description |
 | --- | --- |
@@ -125,7 +125,7 @@ The following metric types are monitored:
 | averageAudioNetworkJitter | Average audio network jitter |
 | maxAudioNetworkJitter | Maximum audio network jitter |
 
-**Video Stream Metrics**
+### Video Stream Metrics
 
 | Name | Description |
 | --- | --- |
@@ -153,7 +153,7 @@ The following metric types are monitored:
 | videoMaxRoundTripTime | Video maximum round trip time |
 | videoPacketUtilization | Number of Real-Time Transport Protocol (RTP) video packets sent in the session |
 
-**App Sharing or Video-Based Screen Sharing Stream Metrics**
+### App Sharing or Video-Based Screen Sharing Stream Metrics
 
 | Name | Description (Application Sharing) |
 | --- | --- |
