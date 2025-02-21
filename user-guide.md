@@ -32,8 +32,7 @@ You can create a backup of your Outlook notes by exporting them to a file. A PST
 6. _Optional_: You are prompted to create a password to protect the exported file. Enter a **Password** and **Verify Password** on the Create Outlook Data File pop-up or leave those fields blank to skip. Then click **OK**.
 
 ## Watch: Export or backup email, contacts and calendar items
-
-<https://support.microsoft.com/en-us/office/export-emails-contacts-and-calendar-items-to-outlook-using-a-pst-file-14252b52-3075-4e9b-be4e-ff9ef1068f91>
+[Export emails, contacts, and calendar items to Outlook using a .pst file](<https://support.microsoft.com/en-us/office/export-emails-contacts-and-calendar-items-to-outlook-using-a-pst-file-14252b52-3075-4e9b-be4e-ff9ef1068f91>)
 
 ## Related articles
 
