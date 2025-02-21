@@ -1,5 +1,5 @@
-Tom Sgrizzi, Technical Writer
-Columbus, OH
+Tom Sgrizzi, Technical Writer  
+Columbus, OH  
 Writing Samples
 
 1. Developer Guide: LogicMonitor
